@@ -35,8 +35,9 @@ defmodule Cards do
       "Clubs",
       "Spades"
     ]
-    for suit <-suits do
-      suit
+
+    for suit <- suits, value <- values do
+      "#{value} of #{suit}"
     end
   end
 
